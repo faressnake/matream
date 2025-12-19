@@ -7,6 +7,7 @@ import Sitemap from 'vite-plugin-sitemap'
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), '')
   return {
+    base: "/mstream/",
     plugins: [
       react(),
       VitePWA({
